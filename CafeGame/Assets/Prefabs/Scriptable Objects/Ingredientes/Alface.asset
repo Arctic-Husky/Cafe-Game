@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373e64af01a7b434c96eb815871a3474, type: 3}
+  m_Name: Alface
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 7983579420306021524, guid: 3392aa897b8955041aa972606fad0e28, type: 3}
+  preco: 1
+  nome: Alface
