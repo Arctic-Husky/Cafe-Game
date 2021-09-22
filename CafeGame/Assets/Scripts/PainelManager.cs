@@ -5,8 +5,7 @@ using TMPro;
 
 public class PainelManager : MonoBehaviour
 {
-    public List<Comida> comidas;
-
+    private List<Comida> comidas; // fazer com que pegue a lista do gamemanager
     private int paginaAtual = 0;
     private int paginaAnterior;
     private TMP_Text textoNomeComida;
@@ -15,6 +14,7 @@ public class PainelManager : MonoBehaviour
 
     void Start()
     {
+        comidas = GameManager.Instancia.Comidas;
         comidaAtual = null;
         textoNomeComida = GameObject.Find("Comida").GetComponent<TMP_Text>();
         textoIngredientes = GameObject.Find("Ingredientes").GetComponent<TMP_Text>();
@@ -26,7 +26,6 @@ public class PainelManager : MonoBehaviour
     {
         if (textoNomeComida == null && textoIngredientes == null)
             return;
-
 
         if(paginaAtual != paginaAnterior)
             MostrarProximaComida();
