@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void HandlePausado()
     {
-
+        Instancia.PausarResumirJogo();
     }
 
     /// <summary>
